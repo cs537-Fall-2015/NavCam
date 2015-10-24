@@ -22,7 +22,7 @@ public class WriteImage {
 		FileOutputStream fileOuputStream = null;
 		try {
 			BufferedImage originalImage = ImageIO.read(new File(
-					"C:/Users/Public/Pictures/Sample Pictures/Desert.jpg"));
+					"Sample Pictures/Desert.jpg"));
 			baos = new ByteArrayOutputStream();
 			ImageIO.write(originalImage, "jpg", baos);
 			baos.flush();
@@ -37,7 +37,7 @@ public class WriteImage {
 			String base64Encoded = DatatypeConverter.printBase64Binary(imageInByte);
 			FileWriter writer = null;
 			try {
-				writer = new FileWriter("C:/Jugal/Courses/CS537/JSON generated/Image.json");
+				writer = new FileWriter("JSON generated/Image.json");
 			} catch (IOException e) {
 				e.printStackTrace();
 			}

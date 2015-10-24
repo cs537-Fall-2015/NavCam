@@ -37,7 +37,7 @@ public class MyClassSeven {
 	
 	
 	public void power_jason(double x){
-		String myFilePath = "C:/Jugal/Courses/CS537/JSON generated/Power.json";
+		String myFilePath = "JSON generated/Power.json";
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
 		// Instantiate the writer since we're writing to a JSON file.
@@ -86,7 +86,7 @@ public class MyClassSeven {
 			String base64Encoded = DatatypeConverter.printBase64Binary(imageInByte);
 			FileWriter writer = null;
 			try {
-				writer = new FileWriter("C:/Jugal/Courses/CS537/JSON generated/Image"+n+".json");
+				writer = new FileWriter("JSON generated/Image"+n+".json");
 			} catch (IOException e) {
 				e.printStackTrace();
 			}

@@ -2,13 +2,13 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
-	<classpathentry kind="lib" path="E:/CS537/work/NavCam/workspace/CS537/lib/json-simple-1.1.1.jar"/>
-	<classpathentry kind="lib" path="E:/CS537/work/NavCam/workspace/CS537/lib/gson-2.3.1.jar"/>
-	<classpathentry kind="lib" path="E:/CS537/work/NavCam/workspace/CS537/lib/javacv.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ami/workspace/NavCam/workspace/CS537/lib/json-simple-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ami/workspace/NavCam/workspace/CS537/lib/gson-2.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ami/workspace/NavCam/workspace/CS537/lib/javacv.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/OpenCV"/>
-	<classpathentry kind="lib" path="E:/CS537/work/opencv/build/java/opencv-300.jar"/>
-	<classpathentry kind="lib" path="E:/CS537/work/NavCam/workspace/CS537/lib/javacpp-0.5.jar"/>
-	<classpathentry kind="lib" path="E:/CS537/work/NavCam/workspace/CS537/lib/jmf.jar.zip"/>
-	<classpathentry kind="lib" path="E:/CS537/work/NavCam/workspace/CS537/lib/jmf.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ami/workspace/NavCam/workspace/CS537/lib/opencv-300.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ami/workspace/NavCam/workspace/CS537/lib/javacpp-0.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ami/workspace/NavCam/workspace/CS537/lib/jmf.jar.zip"/>
+	<classpathentry kind="lib" path="C:/Users/Ami/workspace/NavCam/workspace/CS537/lib/jmf.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

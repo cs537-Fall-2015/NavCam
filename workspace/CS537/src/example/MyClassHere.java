@@ -9,7 +9,7 @@ public class MyClassHere {
 	private String myString;
 	private double[] myList;
 	
-	
+	//test
 	MyClassHere(int someParameter){
 		this.setMyInteger(someParameter);
 		this.setMyBoolean(false);

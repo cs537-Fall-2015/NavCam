@@ -11,7 +11,7 @@ import javax.xml.bind.DatatypeConverter;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-
+//i made a change by ray
 public class ReadImage {
 	public static void main(String[] args)  {
 		jsontojpg("Image1");

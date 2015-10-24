@@ -37,7 +37,7 @@ public class ReadImage {
 			byte[] imageInByte = DatatypeConverter.parseBase64Binary(image);
 		
 			FileOutputStream fileOuputStream = new FileOutputStream(
-				    "C:/Jugal/Courses/CS537/JSON to jpg/DD"+n+".jpg");
+				    "JSON to jpg/DD"+n+".jpg");
 			    fileOuputStream.write(imageInByte);	    
 			    System.out.println("Conversion completed");
 		} catch (IOException | ParseException e) {

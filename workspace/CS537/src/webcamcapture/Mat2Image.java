@@ -3,8 +3,7 @@ package webcamcapture;
 import java.awt.image.BufferedImage;
 import org.opencv.core.Core;
 import org.opencv.core.Mat;
-import org.opencv.highgui.Highgui;
-import org.opencv.imgproc.Imgproc;
+
 
 public class Mat2Image {
     Mat mat = new Mat();

@@ -17,7 +17,7 @@ public class WriteToJSON {
 		// This is where the file will be written to
 		// In this example it is written to my desktop
 		// If Example.json doesn't exist it will be created
-		String myFilePath = "C:/Jugal/Courses/CS537/JSON generated/Example.json";
+		String myFilePath = "JSON generated/Example.json";
 		
 		// Gson is used to create a json object that is spaced nicely
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();

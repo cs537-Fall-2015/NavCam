@@ -24,7 +24,7 @@ public class Main {
 		}
 		Mat frame=new Mat();
 		cap.retrieve(frame);
-		org.opencv.imgcodecs.Imgcodecs.imwrite("C:\\Jugal\\Courses\\CS537\\"+n+".jpg", frame);
+		org.opencv.imgcodecs.Imgcodecs.imwrite(""+n+".jpg", frame);
 		n++;
 		cap.release();
 	}

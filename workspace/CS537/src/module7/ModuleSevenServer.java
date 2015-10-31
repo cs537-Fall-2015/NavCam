@@ -128,11 +128,11 @@ public class ModuleSevenServer extends RoverServerRunnable{
 						}
 						Mat frame=new Mat();
 						cap.retrieve(frame);
-						String name="C:\\Jugal\\Courses\\CS537\\Click Set\\"+n+".jpg";
+						String name="Click Set\\"+n+".jpg";
 						org.opencv.imgcodecs.Imgcodecs.imwrite(name, frame);
 						
 						GrayScale(name);
-						modulesevenobj.convert_to_json("C:/Jugal/Courses/CS537/Click Set/"+n+".jpg");
+						modulesevenobj.convert_to_json("Click Set/"+n+".jpg");
 						System.out.println("----Picture clicked and stored in JSON----");
 						
 						cap.release();

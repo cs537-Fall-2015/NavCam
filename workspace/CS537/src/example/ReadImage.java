@@ -26,7 +26,7 @@ public class ReadImage {
 		// This is where the file will be written to
 		// In this example it is written to my desktop
 		// If Example.json doesn't exist it will be created
-		String myFilePath = "C:/Jugal/Courses/CS537/JSON generated/"+imagestring+".json";
+		String myFilePath = "JSON generated/"+imagestring+".json";
 		
 		// JSONParser is used to parse the data
 		JSONParser parser = new JSONParser();
@@ -37,7 +37,7 @@ public class ReadImage {
 			byte[] imageInByte = DatatypeConverter.parseBase64Binary(image);
 		
 			FileOutputStream fileOuputStream = new FileOutputStream(
-				    "C:/Jugal/Courses/CS537/JSON to jpg/DD"+n+".jpg");
+				    "JSON to jpg/DD"+n+".jpg");
 			    fileOuputStream.write(imageInByte);	    
 			    System.out.println("Conversion completed");
 		} catch (IOException | ParseException e) {

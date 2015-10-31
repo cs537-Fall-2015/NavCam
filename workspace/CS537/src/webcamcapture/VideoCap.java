@@ -1,6 +1,5 @@
 package webcamcapture;
 
-
 import java.awt.image.BufferedImage;
 
 import org.opencv.core.Core;

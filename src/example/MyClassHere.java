@@ -1,4 +1,4 @@
-package example;
+package modulenavcam.junk.example;
 
 
 public class MyClassHere {

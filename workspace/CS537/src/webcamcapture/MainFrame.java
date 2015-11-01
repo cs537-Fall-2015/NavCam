@@ -25,9 +25,6 @@ public class MainFrame extends JFrame implements ActionListener {
 	JPanel buttonPane;
 
 
-
-	
-	
 	public MainFrame()
 	{
 		captureView = new JPanel();
@@ -65,15 +62,16 @@ public class MainFrame extends JFrame implements ActionListener {
 		
 		setBounds(100, 100, 800, 600);
 		
+		setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
 		setVisible(true);
+		
+		
+		System.out.println("The camera is TURNED ON" );
+
 
 	}
 	
-	
-	
-	
-	
-	
+
 	
 	
 	class RepaintTask extends TimerTask{
@@ -93,16 +91,33 @@ public class MainFrame extends JFrame implements ActionListener {
 		
 		System.loadLibrary(Core.NATIVE_LIBRARY_NAME);	// Load OpenCV stuff
 		
-		boolean gotNewImage = myFrame.capture("camera.jpg");
-		
-		
-		if (gotNewImage) {
-			File tmpFile = new File("camera.jpg");
+		if(e.getActionCommand().equals("Capture"))
+		{
+			boolean gotNewImage = myFrame.capture("camera.jpg");
 			
-		} 
+			if (gotNewImage) {
+				File tmpFile = new File("camera.jpg");
+				
+				System.out.println("The system captured an photo with the name camera.jpg" );
+
+				
+			} 
+			
+			
+		}
+		else if(e.getActionCommand().equals("TURN OFF"))
+		{
+			timer.cancel();
+			timer.purge();
+			myFrame.release();
+			setVisible(false);
+			
+			System.out.println("The camera is TURNED OFF" );
+			
+			Runtime.getRuntime().exit(0);
+
+		}
 	
-		
-		
 	}
 }
 

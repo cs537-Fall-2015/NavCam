@@ -19,6 +19,8 @@ import json.GlobalReader;
 import json.MyWriter;
 import generic.RoverServerRunnable;
 
+import module1.MyClassHere;
+
 public class ModuleOneServer extends RoverServerRunnable {
 
 	public ModuleOneServer(int port) throws IOException {

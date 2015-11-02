@@ -5,7 +5,11 @@
 	<classpathentry kind="lib" path="C:/Users/Ami/workspace/NavCam/lib/json-simple-1.1.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Ami/workspace/NavCam/lib/gson-2.3.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Ami/workspace/NavCam/lib/javacv.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/OpenCV"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/OpenCV">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="C:/Users/Ami/Desktop/opencv/build/java/x64"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/Ami/workspace/NavCam/lib/opencv-2410.jar">
 		<attributes>
 			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="C:/Users/Ami/workspace/opencv/build/java/x64"/>

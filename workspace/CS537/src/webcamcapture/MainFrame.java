@@ -114,7 +114,10 @@ public class MainFrame extends JFrame implements ActionListener {
 			
 			System.out.println("The camera is TURNED OFF" );
 			
-			Runtime.getRuntime().exit(0);
+			MainView mainView = new MainView();
+
+			
+		//	Runtime.getRuntime().exit(0);
 
 		}
 	

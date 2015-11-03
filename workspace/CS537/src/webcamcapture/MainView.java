@@ -72,6 +72,14 @@ public class MainView  extends JFrame implements ActionListener {
 			
 			Runtime.getRuntime().exit(0);
 
+		}else if(e.getActionCommand().equals("About NavCam"))
+		{
+			setVisible(false);
+			
+			AboutFrame about = new AboutFrame();
+			
+			
+
 		}
 		
 	}

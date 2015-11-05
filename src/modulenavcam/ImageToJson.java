@@ -9,7 +9,7 @@ import com.sun.media.vfw.BitMapInfo;
 
 public class ImageToJson {
 	
-	private String getStringFromBitmap(BitMapInfo bitmapPicture) {
+	private String getStringFromBitmap(BitMap bitmapPicture) {
 	
 		 final int COMPRESSION_QUALITY = 100;
 		 String encodedImage;

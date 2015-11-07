@@ -27,6 +27,7 @@ public class Mat2Image {
         }
     
     
+    
 
         public BufferedImage matToBufferedImage(Mat matrix) {  
         	int cols = matrix.cols();  

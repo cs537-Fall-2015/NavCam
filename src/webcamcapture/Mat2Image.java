@@ -27,8 +27,6 @@ public class Mat2Image {
         }
     
     
-    
-
         public BufferedImage matToBufferedImage(Mat matrix) {  
         	int cols = matrix.cols();  
         	int rows = matrix.rows();  
@@ -53,6 +51,7 @@ public class Mat2Image {
         		default:  
         			return null;  
         	}  
+    	    
     	    BufferedImage image2 = new BufferedImage(cols, rows, type);  
     	    image2.getRaster().setDataElements(0, 0, cols, rows, data);  
     	    return image2;  

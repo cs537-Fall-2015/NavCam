@@ -41,7 +41,7 @@ public class MyFrame extends JLabel {
         try {
         setIcon(new ImageIcon(videoCap.getOneFrame()));
         repaint();
-        } catch (Exception e) {e.printStackTrace();}
+        } catch (Exception e) {}
     }
   
  

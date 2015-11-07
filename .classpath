@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
+<<<<<<< HEAD
 	<classpathentry kind="lib" path="E:/CS537/work/opencv/build/java/opencv-2410.jar">
 		<attributes>
 			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="E:/CS537/work/opencv/build/java/x64"/>
@@ -20,5 +21,16 @@
 	<classpathentry kind="lib" path="E:/CS537/work/NavCam/workspace/CS537/lib/jmf.jar"/>
 	<classpathentry kind="lib" path="E:/CS537/work/NavCam/workspace/CS537/lib/jmf.jar.zip"/>
 	<classpathentry kind="lib" path="E:/CS537/work/NavCam/workspace/CS537/lib/json-simple-1.1.1.jar"/>
+=======
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="C:/Users/Manan/workspace/NavCam/lib/json-simple-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manan/workspace/NavCam/lib/gson-2.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manan/workspace/NavCam/lib/javacpp-0.5-sources.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/OpenCV"/>
+	<classpathentry kind="lib" path="C:/Users/Manan/Downloads/opencv/build/java/opencv-2410.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manan/workspace/NavCam/lib/javacpp-0.5.jar.zip"/>
+	<classpathentry kind="lib" path="C:/Users/Manan/workspace/NavCam/lib/jmf.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Manan/workspace/NavCam/lib/jmf.jar.zip"/>
+>>>>>>> f62180ba2f9bcf023a4eede53f6cd5f011b2a052
 	<classpathentry kind="output" path="bin"/>
 </classpath>

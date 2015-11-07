@@ -14,13 +14,8 @@ import java.util.Random;
 import javax.imageio.ImageIO;
 
 import org.opencv.core.Mat;
+import org.opencv.highgui.VideoCapture;
 import org.opencv.imgproc.Imgproc;
-import org.opencv.videoio.VideoCapture;
-
-import static com.googlecode.javacv.cpp.opencv_highgui.*;
-
-import com.googlecode.javacv.OpenCVFrameGrabber;
-import com.googlecode.javacv.cpp.opencv_core.IplImage;
 
 import generic.RoverServerRunnable;
 public class ModuleSevenServer extends RoverServerRunnable{
@@ -129,7 +124,7 @@ public class ModuleSevenServer extends RoverServerRunnable{
 						Mat frame=new Mat();
 						cap.retrieve(frame);
 						String name="Click Set\\"+n+".jpg";
-						org.opencv.imgcodecs.Imgcodecs.imwrite(name, frame);
+						//org.opencv.imgcodecs.Imgcodecs.imwrite(name, frame);
 						
 						GrayScale(name);
 						modulesevenobj.convert_to_json("Click Set/"+n+".jpg");

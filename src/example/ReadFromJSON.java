@@ -17,7 +17,7 @@ public class ReadFromJSON {
 		// This is where the file will be written to
 		// In this example it is written to my desktop
 		// If Example.json doesn't exist it will be created
-		String myFilePath = "JSON generated/Image.json";
+		String myFilePath = "JSON output/Example.json";
 		
 		// JSONParser is used to parse the data
 		JSONParser parser = new JSONParser();

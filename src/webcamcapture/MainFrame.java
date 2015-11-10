@@ -93,10 +93,10 @@ public class MainFrame extends JFrame implements ActionListener {
 		
 		if(e.getActionCommand().equals("Capture"))
 		{
-			boolean gotNewImage = myFrame.capture("camera.jpg");
+			boolean gotNewImage = myFrame.capture("NavCamData/camera.jpg");
 			
 			if (gotNewImage) {
-				File tmpFile = new File("camera.jpg");
+				File tmpFile = new File("NavCamData/camera.jpg");
 				
 				System.out.println("The system captured an photo with the name camera.jpg" );
 

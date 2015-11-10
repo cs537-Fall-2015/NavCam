@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="NavCamData"/>
 	<classpathentry kind="lib" path="E:/CS537/work/opencv/build/java/opencv-2410.jar">
 		<attributes>
 			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="E:/CS537/work/opencv/build/java/x64"/>

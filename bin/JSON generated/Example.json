@@ -1,0 +1,13 @@
+{
+  "myInteger": 5,
+  "myBoolean": false,
+  "myDouble": 452.2,
+  "myLong": 10000,
+  "myString": "This is awesome!",
+  "myList": [
+    1.9,
+    2.9,
+    3.4,
+    3.5
+  ]
+}

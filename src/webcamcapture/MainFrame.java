@@ -117,7 +117,6 @@ public class MainFrame extends JFrame implements ActionListener {
 			MainView mainView = new MainView();
 
 			
-		//	Runtime.getRuntime().exit(0);
 
 		}
 	

@@ -110,15 +110,46 @@ public class MainFrame extends JFrame implements ActionListener {
 		
 		if(e.getActionCommand().equals("Capture"))
 		{
-			boolean gotNewImage = myFrame.capture("NavCamData/camera.jpg");
+			openLeftTop();
+			boolean gotNewImage = myFrame.capture("NavCamData/capturedImages/LeftTop.jpg");
 			
 			if (gotNewImage) {
-				File tmpFile = new File("NavCamData/camera.jpg");
-				
-				System.out.println("The system captured an photo with the name camera.jpg" );
-
-				
+				File tmpFile = new File("NavCamData/capturedImages/LeftTop.jpg");	
+				System.out.println("The system captured an photo with the name LeftTop.jpg" );
 			} 
+			
+			
+			openRightTop();
+			
+	        boolean gotNewImage2 = myFrame.capture("NavCamData/capturedImages/RightTop.jpg");
+			
+			if (gotNewImage2) {
+				File tmpFile = new File("NavCamData/capturedImages/LeftTop.jpg");	
+				System.out.println("The system captured an photo with the name RightTop.jpg" );
+			} 
+			
+			
+			openLeftDown();
+			
+			  boolean gotNewImage3 = myFrame.capture("NavCamData/capturedImages/LeftDown.jpg");
+				
+				if (gotNewImage3) {
+					File tmpFile = new File("NavCamData/capturedImages/LeftDown.jpg");	
+					System.out.println("The system captured an photo with the name LeftDown.jpg" );
+				} 
+				
+				
+			openRightDown();
+			
+			
+			 boolean gotNewImage4 = myFrame.capture("NavCamData/capturedImages/RightDown.jpg");
+				
+				if (gotNewImage4) {
+					File tmpFile = new File("NavCamData/capturedImages/RightDown.jpg");	
+					System.out.println("The system captured an photo with the name RightDown.jpg" );
+				} 
+				
+			
 			
 			
 		}
@@ -133,49 +164,71 @@ public class MainFrame extends JFrame implements ActionListener {
 
 		}else if(e.getActionCommand().equals("Left Top"))
 		{
-			timer.cancel();
-			timer.purge();
-			myFrame.release();
-			myFrame.switchToLeftTop();
-			timer = new Timer();	// Timer helps get current frame of camera  
-			timer.scheduleAtFixedRate(new RepaintTask(), new Date(), 50);	// 50ms will trigger the timer
-			validate();
-			repaint();
+			openLeftTop();
 		}
 		else if(e.getActionCommand().equals("Right Top"))
 		{
-			timer.cancel();
-			timer.purge();
-			myFrame.release();
-			myFrame.switchToRightTop();
-			timer = new Timer();	// Timer helps get current frame of camera  
-			timer.scheduleAtFixedRate(new RepaintTask(), new Date(), 50);	// 50ms will trigger the timer
-			validate();
-			repaint();
+			openRightTop();
 		}
 		else if(e.getActionCommand().equals("Left Down"))
 		{
-			timer.cancel();
-			timer.purge();
-			myFrame.release();
-			myFrame.switchToLeftDown();
-			timer = new Timer();	// Timer helps get current frame of camera  
-			timer.scheduleAtFixedRate(new RepaintTask(), new Date(), 50);	// 50ms will trigger the timer
-			validate();
-			repaint();
+			openLeftDown();
 		}
 		else if(e.getActionCommand().equals("Right Down"))
 		{
-			timer.cancel();
-			timer.purge();
-			myFrame.release();
-			myFrame.switchToRightDown();
-			timer = new Timer();	// Timer helps get current frame of camera  
-			timer.scheduleAtFixedRate(new RepaintTask(), new Date(), 50);	// 50ms will trigger the timer
-			validate();
-			repaint();
+			 openRightDown();
 		}
 	
+	}
+	
+	
+	public void openLeftTop()
+	{
+		timer.cancel();
+		timer.purge();
+		myFrame.release();
+		myFrame.switchToLeftTop();
+		timer = new Timer();	// Timer helps get current frame of camera  
+		timer.scheduleAtFixedRate(new RepaintTask(), new Date(), 50);	// 50ms will trigger the timer
+		validate();
+		repaint();
+	}
+	
+	public void openRightTop()
+	{
+		timer.cancel();
+		timer.purge();
+		myFrame.release();
+		myFrame.switchToRightTop();
+		timer = new Timer();	// Timer helps get current frame of camera  
+		timer.scheduleAtFixedRate(new RepaintTask(), new Date(), 50);	// 50ms will trigger the timer
+		validate();
+		repaint();
+	}
+	
+	public void openLeftDown()
+	{
+		timer.cancel();
+		timer.purge();
+		myFrame.release();
+		myFrame.switchToLeftDown();
+		timer = new Timer();	// Timer helps get current frame of camera  
+		timer.scheduleAtFixedRate(new RepaintTask(), new Date(), 50);	// 50ms will trigger the timer
+		validate();
+		repaint();
+	}
+	
+	
+	public void openRightDown()
+	{
+		timer.cancel();
+		timer.purge();
+		myFrame.release();
+		myFrame.switchToRightDown();
+		timer = new Timer();	// Timer helps get current frame of camera  
+		timer.scheduleAtFixedRate(new RepaintTask(), new Date(), 50);	// 50ms will trigger the timer
+		validate();
+		repaint();
 	}
 }
 

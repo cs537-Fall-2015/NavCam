@@ -13,10 +13,12 @@ public class VideoCap {
 
     VideoCapture cap;
     Mat2Image mat2Img = new Mat2Image();
+    int camNumber;
 
-    VideoCap(){
+    VideoCap(int camNumber){
+    	this.camNumber = camNumber;
         cap = new VideoCapture();
-        cap.open(0);
+        cap.open(camNumber);
     } 
   
     void release(){
@@ -36,5 +38,17 @@ public class VideoCap {
      
         return mat2Img.matToBufferedImage(mat2Img.mat);
     }
+
+	public int getCamNumber() {
+		return camNumber;
+	}
+
+	public void setCamNumber(int camNumber) {
+		this.camNumber = camNumber;
+	}
+
+
+    
+    
     
   }

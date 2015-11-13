@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 /webcamcapture/
 /main/
 /example/
@@ -22,6 +23,14 @@
 /src/
 >>>>>>> d03253df200afe923bfaa5cf9c9405165e1b9ba8
 =======
+=======
+/convert4image/
+/example/
+/generic/
+/json/
+/usecase/
+>>>>>>> ahmed
 /I_O_Handler/
+/main/
 /webcamcapture/
 >>>>>>> ahmed

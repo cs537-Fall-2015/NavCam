@@ -31,7 +31,7 @@ public class MainFrame extends JFrame implements ActionListener {
 
 		// This will create the buttons
 		buttonPane = new JPanel();
-		buttonPane.setLayout(new GridLayout(1,2));
+		buttonPane.setLayout(new GridLayout(3,2));
 		
 		 JButton captureButton = new JButton("Capture"); 
 		 captureButton.addActionListener(this);
@@ -42,6 +42,23 @@ public class MainFrame extends JFrame implements ActionListener {
 		 buttonPane.add(captureButton);
 		 buttonPane.add(TURN_OFF_Button);
 
+		 JButton leftTop = new JButton("Left Top"); 
+		 leftTop.addActionListener(this);
+		 
+		 JButton rightTop = new JButton("Right Top"); 
+		 rightTop.addActionListener(this);
+		 
+		 buttonPane.add(leftTop);
+		 buttonPane.add(rightTop);
+		 
+		 JButton leftDown = new JButton("Left Down"); 
+		 leftDown.addActionListener(this);
+		 
+		 JButton rightDown = new JButton("Right Down"); 
+		 rightDown.addActionListener(this);
+		 
+		 buttonPane.add(leftDown);
+		 buttonPane.add(rightDown);
 		 
 		
 		
@@ -110,14 +127,53 @@ public class MainFrame extends JFrame implements ActionListener {
 			timer.cancel();
 			timer.purge();
 			myFrame.release();
-			setVisible(false);
-			
-			System.out.println("The camera is TURNED OFF" );
-			
+			setVisible(false);	
+			System.out.println("The camera is TURNED OFF" );		
 			MainView mainView = new MainView();
 
-			
-
+		}else if(e.getActionCommand().equals("Left Top"))
+		{
+			timer.cancel();
+			timer.purge();
+			myFrame.release();
+			myFrame.switchToLeftTop();
+			timer = new Timer();	// Timer helps get current frame of camera  
+			timer.scheduleAtFixedRate(new RepaintTask(), new Date(), 50);	// 50ms will trigger the timer
+			validate();
+			repaint();
+		}
+		else if(e.getActionCommand().equals("Right Top"))
+		{
+			timer.cancel();
+			timer.purge();
+			myFrame.release();
+			myFrame.switchToRightTop();
+			timer = new Timer();	// Timer helps get current frame of camera  
+			timer.scheduleAtFixedRate(new RepaintTask(), new Date(), 50);	// 50ms will trigger the timer
+			validate();
+			repaint();
+		}
+		else if(e.getActionCommand().equals("Left Down"))
+		{
+			timer.cancel();
+			timer.purge();
+			myFrame.release();
+			myFrame.switchToLeftDown();
+			timer = new Timer();	// Timer helps get current frame of camera  
+			timer.scheduleAtFixedRate(new RepaintTask(), new Date(), 50);	// 50ms will trigger the timer
+			validate();
+			repaint();
+		}
+		else if(e.getActionCommand().equals("Right Down"))
+		{
+			timer.cancel();
+			timer.purge();
+			myFrame.release();
+			myFrame.switchToRightDown();
+			timer = new Timer();	// Timer helps get current frame of camera  
+			timer.scheduleAtFixedRate(new RepaintTask(), new Date(), 50);	// 50ms will trigger the timer
+			validate();
+			repaint();
 		}
 	
 	}

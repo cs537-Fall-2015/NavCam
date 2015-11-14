@@ -1,18 +1,31 @@
 package convert4image;
 
-
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayOutputStream;
+import java.io.StringReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import javax.json.*;
+import org.json.JSONArray;
+import org.json.simple.JSONObject;
+import com.google.gson.JsonNull;
+import com.google.gson.JsonObject;
+import com.google.gson.stream.JsonReader;
+import com.sun.media.vfw.BitMapInfo;
+
+import java.lang.Object.*;
 
 import org.apache.commons.codec.binary.Base64;
 
-public class convertion {
+public class convertion
 
+{
 	
-	public static void main(String[] args) {
+	public static void main(String[] args)
+	{
 		File file1 = new File("JSON to jpg/DD18.jpg");
 		File file2 = new File("JSON to jpg/DD19.jpg");
 		File file3 = new File("JSON to jpg/DD20.jpg");
@@ -20,33 +33,54 @@ public class convertion {
 		try {
 			
 			FileInputStream imageInFile1 = new FileInputStream(file1);
+			
 			byte imageData1[] = new byte[(int)file1.length()];
+			
 			imageInFile1.read(imageData1);
+			
 			FileInputStream imageInFile2 = new FileInputStream(file2);
+			
 			byte imageData2[] = new byte[(int)file2.length()];
+			
 			imageInFile2.read(imageData2);
 			
 			String imageDataString1 = encodeImage(imageData1);
+			
 			String imageDataString2 = encodeImage(imageData2);
 		
 			String result = imageDataString1 + imageDataString2;
+			
 			byte[] imageByteArray1 = decodeImage(result);
 
 	
 			
 			FileOutputStream imageOutFile = new FileOutputStream("JSON to jpg/img1.jpg");
+			
 			imageOutFile.write(imageByteArray1);
 		
 			imageInFile1.close();
+			
 			imageInFile2.close();
+			
 			imageOutFile.close();
 			
 			System.out.println("Image Successfully Manipulated!");
-		} catch (FileNotFoundException e) {
+			
+		} 
+		catch (FileNotFoundException e) 
+		
+		{
+			
 			System.out.println("Image not found" + e);
-		} catch (IOException ioe) {
-			System.out.println("Exception while reading the Image " + ioe);
+			
 		}
+		catch (IOException ioe) 
+		{
+			
+			System.out.println("Exception while reading the Image " + ioe);
+			
+		}
+		
 
 	}
 	
@@ -55,7 +89,8 @@ public class convertion {
 	 * @param imageByteArray - byte array
 	 * @return String a {@link java.lang.String}
 	 */
-	public static String encodeImage(byte[] imageByteArray){		
+	public static String encodeImage(byte[] imageByteArray)
+	{		
 		return Base64.encodeBase64URLSafeString(imageByteArray);		
 	}
 	
@@ -64,8 +99,13 @@ public class convertion {
 	 * @param imageDataString - a {@link java.lang.String} 
 	 * @return byte array
 	 */
-	public static byte[] decodeImage(String imageDataString) {		
+	public static byte[] decodeImage(String imageDataString)
+	{		
 		return Base64.decodeBase64(imageDataString);
 	}
-
+	
+	{
+		
+	}
+	
 }

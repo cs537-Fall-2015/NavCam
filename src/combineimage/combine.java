@@ -19,9 +19,13 @@ public class combine
         int type;
         //fetching image files
         File[] imgFiles = new File[chunks];
-        for (int i = 0; i < chunks; i++) {
-            imgFiles[i] = new File("arch" + i + ".jpg");
-        }
+//        for (int i = 0; i < chunks; i++) {
+//            imgFiles[i] = new File("src/myimage/arch" + i + ".jpg");
+//        }
+        imgFiles[0] = new File("src/myimage/lefttop.jpg");
+        imgFiles[1] = new File("src/myimage/righttop.jpg");
+        imgFiles[2] = new File("src/myimage/leftdown.jpg");
+        imgFiles[3] = new File("src/myimage/rightdown.jpg");
 
        //creating a bufferd image array from image files
         BufferedImage[] buffImages = new BufferedImage[chunks];
@@ -49,7 +53,7 @@ public class combine
         }
         System.out.println("Image concatenated.....");
         try {
-			ImageIO.write(finalImg, "jpeg", new File("finalImg.jpg"));
+			ImageIO.write(finalImg, "jpeg", new File("src/myimage2/finalImg.jpg"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

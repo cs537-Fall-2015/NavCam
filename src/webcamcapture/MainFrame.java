@@ -111,6 +111,16 @@ public class MainFrame extends JFrame implements ActionListener {
 		if(e.getActionCommand().equals("Capture"))
 		{
 			openLeftTop();
+			
+			
+			
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e1) {
+				e1.printStackTrace();
+			}
+			
+			
 			boolean gotNewImage = myFrame.capture("NavCamData/capturedImages/LeftTop.jpg");
 			
 			if (gotNewImage) {
@@ -121,6 +131,13 @@ public class MainFrame extends JFrame implements ActionListener {
 			
 			openRightTop();
 			
+			
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e1) {
+				e1.printStackTrace();
+			}
+			
 	        boolean gotNewImage2 = myFrame.capture("NavCamData/capturedImages/RightTop.jpg");
 			
 			if (gotNewImage2) {
@@ -130,6 +147,12 @@ public class MainFrame extends JFrame implements ActionListener {
 			
 			
 			openLeftDown();
+			
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e1) {
+				e1.printStackTrace();
+			}
 			
 			  boolean gotNewImage3 = myFrame.capture("NavCamData/capturedImages/LeftDown.jpg");
 				
@@ -142,6 +165,12 @@ public class MainFrame extends JFrame implements ActionListener {
 			openRightDown();
 			
 			
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e1) {
+				e1.printStackTrace();
+			}	
+			
 			 boolean gotNewImage4 = myFrame.capture("NavCamData/capturedImages/RightDown.jpg");
 				
 				if (gotNewImage4) {
@@ -150,6 +179,8 @@ public class MainFrame extends JFrame implements ActionListener {
 				} 
 				
 			
+				openLeftTop();
+
 			
 			
 		}

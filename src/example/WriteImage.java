@@ -22,7 +22,7 @@ public class WriteImage {
 		FileOutputStream fileOuputStream = null;
 		try {
 			BufferedImage originalImage = ImageIO.read(new File(
-					"namib-desert.jpg"));
+					"Sample Pictures/Desert.jpg"));
 			baos = new ByteArrayOutputStream();
 			ImageIO.write(originalImage, "jpg", baos);
 			baos.flush();

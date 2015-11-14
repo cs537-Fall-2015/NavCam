@@ -17,5 +17,6 @@
 	<classpathentry kind="lib" path="lib/jmf.properties"/>
 	<classpathentry kind="lib" path="lib/json-simple-1.1.1.jar"/>
 	<classpathentry kind="lib" path="lib/opencv-2410.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ami/workspace/NavCam/lib/javax.json-1.0-sources.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

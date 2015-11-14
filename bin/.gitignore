@@ -1,61 +1,12 @@
-<<<<<<< HEAD
 /I_O_Handler/
 /combineimage/
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-/webcamcapture/
-/main/
-/example/
-=======
-/.classpath
-/.git/
-/.project
-/.settings/
-/Capture Set/
-/Click Set/
-/JSON generated/
-/JSON to jpg/
-/NavCam.png
-/README.md
-/camera.jpg
-/lib/
-/.git/
-/lib/
-/namib-desert.jpg
-/src/
->>>>>>> d03253df200afe923bfaa5cf9c9405165e1b9ba8
-=======
-=======
->>>>>>> a3b4cca9568ab2dc2ab282981f8bd6bf783cfed3
-/convert4image/
 /example/
 /generic/
 /json/
 /jsontoimage/
 /main/
-<<<<<<< HEAD
 /module7/
 /navcammodule/
 /org/
-/arch1.JPG
-/arch2.JPG
-/arch3.JPG
-/arch4.JPG
-=======
-=======
->>>>>>> ahmed
-/webcamcapture/
->>>>>>> ahmed
-=======
-/generic/
-/json/
-/main/
-/usecase/
-/webcamcapture/
-/capturedImages/
->>>>>>> ahmed
->>>>>>> a3b4cca9568ab2dc2ab282981f8bd6bf783cfed3
+/myimage/
+/myimage2/

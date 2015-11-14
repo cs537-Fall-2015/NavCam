@@ -9,49 +9,31 @@ import java.io.IOException;
 
 import org.apache.commons.codec.binary.Base64;
 
-/**
- * @desc Image manipulation - Conversion
- * 
- * @filename ImageManipulation.java
- * @author <a href="mailto:jeeva@myjeeva.com">Jeevanandam Madanagopal</a>
- * @copyright &copy; 2010-2012 www.myjeeva.com
- */
 public class convertion {
 
-	/**
-	 * @param args
-	 */
+	
 	public static void main(String[] args) {
 		File file1 = new File("JSON to jpg/DD18.jpg");
 		File file2 = new File("JSON to jpg/DD19.jpg");
 		File file3 = new File("JSON to jpg/DD20.jpg");
 		File file4 = new File("JSON to jpg/DD21.jpg");
 		try {
-			/*
-			 * Reading a Image file from file system
-			 */
+			
 			FileInputStream imageInFile1 = new FileInputStream(file1);
 			byte imageData1[] = new byte[(int)file1.length()];
 			imageInFile1.read(imageData1);
 			FileInputStream imageInFile2 = new FileInputStream(file2);
 			byte imageData2[] = new byte[(int)file2.length()];
 			imageInFile2.read(imageData2);
-			/*
-			 * Converting Image byte array into Base64 String 
-			 */
+			
 			String imageDataString1 = encodeImage(imageData1);
 			String imageDataString2 = encodeImage(imageData2);
 		
-			/*
-			 * Converting a Base64 String into Image byte array 
-			 */
 			String result = imageDataString1 + imageDataString2;
 			byte[] imageByteArray1 = decodeImage(result);
 
 	
-			/*
-			 * Write a image byte array into file system  
-			 */
+			
 			FileOutputStream imageOutFile = new FileOutputStream("JSON to jpg/img1.jpg");
 			imageOutFile.write(imageByteArray1);
 		

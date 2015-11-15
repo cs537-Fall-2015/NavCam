@@ -7,11 +7,15 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.Base64;
-
+import java.io.StringReader;
+import javax.json.*;
 import org.json.simple.JSONObject;
+
+import com.google.gson.JsonNull;
+import com.google.gson.JsonObject;
+import com.google.gson.stream.JsonReader;
 import com.sun.media.vfw.BitMapInfo;
-import org.apache.commons.codec.binary.Base64;
+import org.apache.commons.codec.binary.Base64;;
 
 public class ImageToJson {
 
@@ -39,6 +43,7 @@ public class ImageToJson {
 	private String getStringFromImage(File file)
 	{
 		try {            
+			
             // Reading a Image file from file system
             FileInputStream imageInFile = new FileInputStream(file);
             byte imageData[] = new byte[(int) file.length()];
@@ -57,14 +62,26 @@ public class ImageToJson {
  
             imageInFile.close();
             imageOutFile.close();
+            return imageDataString;
  
-            System.out.println("Image Successfully Manipulated!");
+            
         } catch (FileNotFoundException e) {
             System.out.println("Image not found" + e);
         } catch (IOException ioe) {
             System.out.println("Exception while reading the Image " + ioe);
         }
+		return null;
 		
+	}
+	
+	
+	private static JsonObject jsonFromString(String jsonObjectStr) {
+		
+	    JsonReader jsonReader = Json.createReader(new StringReader(jsonObjectStr));
+	    JsonObject object = jsonReader.readObject();
+	    jsonReader.close();
+
+	    return object;
 	}
 
 	/*public static void main(String[] args)

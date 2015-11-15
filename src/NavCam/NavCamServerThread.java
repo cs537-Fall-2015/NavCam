@@ -34,4 +34,5 @@ public class NavCamServerThread extends Thread {
 
 		}
 	}
+	//
 }

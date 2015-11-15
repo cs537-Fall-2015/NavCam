@@ -1,5 +1,5 @@
 package moduleJsonToImage;
 
-public class JsonToImage {
+public class JsonToJPG {
 
 }

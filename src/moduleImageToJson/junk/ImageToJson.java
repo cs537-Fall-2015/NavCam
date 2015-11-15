@@ -1,4 +1,4 @@
-package moduleImageToJson;
+package moduleImageToJson.junk;
 
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;

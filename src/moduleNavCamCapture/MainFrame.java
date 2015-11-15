@@ -121,10 +121,10 @@ public class MainFrame extends JFrame implements ActionListener {
 			}
 			
 			
-			boolean gotNewImage = myFrame.capture("NavCamData/capturedImages/LeftTop.jpg");
+			boolean gotNewImage = myFrame.capture("src/moduleNavCamCapture/resources/capturedImages/LeftTop.jpg");
 			
 			if (gotNewImage) {
-				File tmpFile = new File("NavCamData/capturedImages/LeftTop.jpg");	
+				File tmpFile = new File("src/moduleNavCamCapture/resources/capturedImages/LeftTop.jpg");	
 				System.out.println("The system captured an photo with the name LeftTop.jpg" );
 			} 
 			
@@ -138,10 +138,10 @@ public class MainFrame extends JFrame implements ActionListener {
 				e1.printStackTrace();
 			}
 			
-	        boolean gotNewImage2 = myFrame.capture("NavCamData/capturedImages/RightTop.jpg");
+	        boolean gotNewImage2 = myFrame.capture("src/moduleNavCamCapture/resources/capturedImages/RightTop.jpg");
 			
 			if (gotNewImage2) {
-				File tmpFile = new File("NavCamData/capturedImages/LeftTop.jpg");	
+				File tmpFile = new File("src/moduleNavCamCapture/resources/capturedImages/LeftTop.jpg");	
 				System.out.println("The system captured an photo with the name RightTop.jpg" );
 			} 
 			
@@ -154,10 +154,10 @@ public class MainFrame extends JFrame implements ActionListener {
 				e1.printStackTrace();
 			}
 			
-			  boolean gotNewImage3 = myFrame.capture("NavCamData/capturedImages/LeftDown.jpg");
+			  boolean gotNewImage3 = myFrame.capture("src/moduleNavCamCapture/resources/capturedImages/LeftDown.jpg");
 				
 				if (gotNewImage3) {
-					File tmpFile = new File("NavCamData/capturedImages/LeftDown.jpg");	
+					File tmpFile = new File("src/moduleNavCamCapture/resources/capturedImages/LeftDown.jpg");	
 					System.out.println("The system captured an photo with the name LeftDown.jpg" );
 				} 
 				
@@ -171,10 +171,10 @@ public class MainFrame extends JFrame implements ActionListener {
 				e1.printStackTrace();
 			}	
 			
-			 boolean gotNewImage4 = myFrame.capture("NavCamData/capturedImages/RightDown.jpg");
+			 boolean gotNewImage4 = myFrame.capture("src/moduleNavCamCapture/resources/capturedImages/RightDown.jpg");
 				
 				if (gotNewImage4) {
-					File tmpFile = new File("NavCamData/capturedImages/RightDown.jpg");	
+					File tmpFile = new File("src/moduleNavCamCapture/resources/capturedImages/RightDown.jpg");	
 					System.out.println("The system captured an photo with the name RightDown.jpg" );
 				} 
 				

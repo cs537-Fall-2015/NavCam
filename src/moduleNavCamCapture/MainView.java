@@ -37,7 +37,7 @@ public class MainView  extends JFrame implements ActionListener {
 		 buttonPane.add(exitButton);
 		 
 		 
-		 ImageIcon imageIcon = new ImageIcon("NavCamData/NavCam.png");
+		 ImageIcon imageIcon = new ImageIcon("src/moduleNavCamCapture/resources/NavCam.png");
 		 JLabel label = new JLabel(imageIcon);
 		 
 		add(buttonPane, BorderLayout.SOUTH);

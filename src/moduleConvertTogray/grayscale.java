@@ -13,11 +13,11 @@ public class grayscale{
    BufferedImage  image;
    int width;
    int height;
-   
+   private int n=1;
    public grayscale() {
    
       try {
-         File input = new File("src/myimage2/finalimg.jpg");
+         File input = new File("src/moduleconverttogray/resources/originalimages/mixed"+n+".jpg");
          image = ImageIO.read(input);
          width = image.getWidth();
          height = image.getHeight();
@@ -38,9 +38,9 @@ public class grayscale{
             }
          }
          System.out.println("image turn into gray...");
-         File ouptut = new File("src/myimage2/grayscale.jpg");
+         File ouptut = new File("src/moduleconverttogray/resources/grayimages/graymixed" +n+".jpg");
          ImageIO.write(image, "jpg", ouptut);
-         
+         n++;
       } catch (Exception e) {}
    }
 }

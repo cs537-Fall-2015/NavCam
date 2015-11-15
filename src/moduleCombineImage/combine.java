@@ -8,9 +8,10 @@ import javax.imageio.ImageIO;
 
 public class combine 
 {
-	
+	private int n =1;
 	public void run()
 	{
+		
 		int rows = 2;   //we assume the no. of rows and cols are known and each chunk has equal width and height
         int cols = 2;
         int chunks = rows * cols;
@@ -19,13 +20,11 @@ public class combine
         int type;
         //fetching image files
         File[] imgFiles = new File[chunks];
-//        for (int i = 0; i < chunks; i++) {
-//            imgFiles[i] = new File("src/myimage/arch" + i + ".jpg");
-//        }
-        imgFiles[0] = new File("src/myimage/lefttop.jpg");
-        imgFiles[1] = new File("src/myimage/righttop.jpg");
-        imgFiles[2] = new File("src/myimage/leftdown.jpg");
-        imgFiles[3] = new File("src/myimage/rightdown.jpg");
+
+        imgFiles[0] = new File("src/modulecombineimage/resources/originalimages/lefttop.jpg");
+        imgFiles[1] = new File("src/modulecombineimage/resources/originalimages/righttop.jpg");
+        imgFiles[2] = new File("src/modulecombineimage/resources/originalimages/leftdown.jpg");
+        imgFiles[3] = new File("src/modulecombineimage/resources/originalimages/rightdown.jpg");
 
        //creating a bufferd image array from image files
         BufferedImage[] buffImages = new BufferedImage[chunks];
@@ -43,6 +42,7 @@ public class combine
 
         //Initializing the final image
         BufferedImage finalImg = new BufferedImage(chunkWidth*cols, chunkHeight*rows, type);
+        
 
         int num = 0;
         for (int i = 0; i < rows; i++) {
@@ -53,11 +53,13 @@ public class combine
         }
         System.out.println("Image concatenated.....");
         try {
-			ImageIO.write(finalImg, "jpeg", new File("src/myimage2/finalImg.jpg"));
-		} catch (IOException e) {
+			ImageIO.write(finalImg, "jpeg", new File("src/modulecombineimage/resources/mixedimages/mixed" +n+".jpg"));
+			n++;
+        } catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+        
 	}
 
 }

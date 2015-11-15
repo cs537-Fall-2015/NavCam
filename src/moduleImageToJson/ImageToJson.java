@@ -7,26 +7,28 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.Base64;
-
+import java.io.StringReader;
 import org.json.simple.JSONObject;
+
+import com.google.gson.JsonNull;
+import com.google.gson.JsonObject;
+import com.google.gson.stream.JsonReader;
 import com.sun.media.vfw.BitMapInfo;
-import org.apache.commons.codec.binary.Base64;
+
+
+import org.apache.commons.codec.binary.Base64;;
 
 public class ImageToJson {
 
-	/*private String getStringFromBitmap(BufferedImage bitmapPicture) {
-		
-		 final int COMPRESSION_QUALITY = 100;
-		 String encodedImage;
-		 ByteArrayOutputStream byteArrayBitmapStream = new ByteArrayOutputStream();
-		 bitmapPicture.compress(BufferedImage.CompressFormat.PNG, COMPRESSION_QUALITY,
-		 byteArrayBitmapStream);
-		 byte[] b = byteArrayBitmapStream.toByteArray();
-		 encodedImage = Base64.encodeToString(b, Base64.getEncoder());
-		 return encodedImage;
-		 }*/
 	
+	 public static void main(String[] args){
+	    	ImageToJson i = new ImageToJson();
+	    	
+	    	//File file = new File("C:/1.JPG");
+	    	String output=i.getStringFromImage(new File("C:/Users/Public/Videos/Dell/Wildlife.jpg"));
+	    	System.out.println(output);
+	    	
+	    }
 	 public static String encodeImage(byte[] imageByteArray) {
 	       return Base64.encodeBase64URLSafeString(imageByteArray);
 		
@@ -39,6 +41,7 @@ public class ImageToJson {
 	private String getStringFromImage(File file)
 	{
 		try {            
+			
             // Reading a Image file from file system
             FileInputStream imageInFile = new FileInputStream(file);
             byte imageData[] = new byte[(int) file.length()];
@@ -51,25 +54,33 @@ public class ImageToJson {
             byte[] imageByteArray = decodeImage(imageDataString);
  
             // Write a image byte array into file system
-            FileOutputStream imageOutFile = new FileOutputStream(" ");
+            FileOutputStream imageOutFile = new FileOutputStream("C:/Users/Public/Videos/Dell/Wildlifeafter1.jpg");
  
             imageOutFile.write(imageByteArray);
  
             imageInFile.close();
             imageOutFile.close();
+            return imageDataString;
  
-            System.out.println("Image Successfully Manipulated!");
+            
         } catch (FileNotFoundException e) {
-            System.out.println("Image not found" + e);
+            System.out.println("Image not found " + e);
         } catch (IOException ioe) {
             System.out.println("Exception while reading the Image " + ioe);
         }
+		return null;
 		
 	}
+	
+	
+	/*private static JsonObject jsonFromString(String jsonObjectStr) {
+		
+	    JsonReader jsonReader = Json.createReader(new StringReader(jsonObjectStr));
+	    JsonObject object = jsonReader.readObject();
+	    jsonReader.close();
 
-	/*public static void main(String[] args)
-	{
-		String encodedImage = getStringFromBitmap(bitmapPicture);
-		JSONObject jsonObj = new JSONObject("{\"image\":\" + encodedImage + \"}");
+	    return object;
 	}*/
+
+	
 }

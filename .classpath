@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-<<<<<<< HEAD
 	<classpathentry kind="lib" path="E:/CS537/work/NavCam/workspace/CS537/lib/commons-codec-1.10.jar"/>
 	<classpathentry kind="lib" path="E:/CS537/work/NavCam/workspace/CS537/lib/commons-codec-1.10-javadoc.jar"/>
 	<classpathentry kind="lib" path="E:/CS537/work/NavCam/workspace/CS537/lib/commons-codec-1.10-sources.jar"/>
@@ -19,25 +17,8 @@
 	<classpathentry kind="lib" path="E:/CS537/work/NavCam/workspace/CS537/lib/opencv-2410.jar">
 		<attributes>
 			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="E:/CS537/work/opencv/build/java/x64"/>
-=======
-	<classpathentry kind="lib" path="C:/Users/ray/Documents/GitHub/NavCam/lib/commons-codec-1.10.jar"/>
-	<classpathentry kind="lib" path="C:/Users/ray/Documents/GitHub/NavCam/lib/commons-codec-1.10-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/Users/ray/Documents/GitHub/NavCam/lib/commons-codec-1.10-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/ray/Documents/GitHub/NavCam/lib/commons-codec-1.10-tests.jar"/>
-	<classpathentry kind="lib" path="C:/Users/ray/Documents/GitHub/NavCam/lib/commons-codec-1.10-test-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/ray/Documents/GitHub/NavCam/lib/gson-2.3.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/ray/Documents/GitHub/NavCam/lib/javacpp-0.5.jar"/>
-	<classpathentry kind="lib" path="C:/Users/ray/Documents/GitHub/NavCam/lib/javacpp-0.5.jar.zip"/>
-	<classpathentry kind="lib" path="C:/Users/ray/Documents/GitHub/NavCam/lib/javacpp-0.5-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/ray/Documents/GitHub/NavCam/lib/javacv.jar"/>
-	<classpathentry kind="lib" path="C:/Users/ray/Documents/GitHub/NavCam/lib/jmf.jar"/>
-	<classpathentry kind="lib" path="C:/Users/ray/Documents/GitHub/NavCam/lib/jmf.jar.zip"/>
-	<classpathentry kind="lib" path="C:/Users/ray/Documents/GitHub/NavCam/lib/json-simple-1.1.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/ray/Documents/GitHub/NavCam/lib/opencv-2410.jar">
-		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="C:/Users/ray/Downloads/opencv/build/java/x64"/>
->>>>>>> 223f02e2a67c2066a6f4a5b13380068ba9930311
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -2,6 +2,10 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+<<<<<<< HEAD
+=======
+	<classpathentry kind="lib" path="lib/commons-codec-1.10-javadoc.jar"/>
+>>>>>>> 923f5e74b95ec2366bdb78cd60173a4a7e240cb0
 	<classpathentry kind="lib" path="C:/Users/Ami/workspace/NavCam/lib/commons-codec-1.10.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Ami/workspace/NavCam/lib/commons-codec-1.10-javadoc.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Ami/workspace/NavCam/lib/commons-codec-1.10-sources.jar"/>
@@ -12,6 +16,11 @@
 	<classpathentry kind="lib" path="C:/Users/Ami/workspace/NavCam/lib/javacpp-0.5.jar.zip"/>
 	<classpathentry kind="lib" path="C:/Users/Ami/workspace/NavCam/lib/javacpp-0.5-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Ami/workspace/NavCam/lib/javacv.jar"/>
+<<<<<<< HEAD
+=======
+	<classpathentry kind="lib" path="C:/Users/Ami/workspace/NavCam/lib/javax.json-1.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ami/workspace/NavCam/lib/javax.json-api-1.0.jar"/>
+>>>>>>> 923f5e74b95ec2366bdb78cd60173a4a7e240cb0
 	<classpathentry kind="lib" path="C:/Users/Ami/workspace/NavCam/lib/jmf.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Ami/workspace/NavCam/lib/jmf.jar.zip"/>
 	<classpathentry kind="lib" path="C:/Users/Ami/workspace/NavCam/lib/json-simple-1.1.1.jar"/>

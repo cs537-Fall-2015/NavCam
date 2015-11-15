@@ -8,6 +8,10 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.StringReader;
+<<<<<<< HEAD:src/moduleImageToJson/ImageToJson.java
+=======
+import javax.json.*;
+>>>>>>> 923f5e74b95ec2366bdb78cd60173a4a7e240cb0:src/navcammodule/ImageToJson.java
 import org.json.simple.JSONObject;
 
 import com.google.gson.JsonNull;
@@ -27,7 +31,10 @@ public class ImageToJson {
 	    	//File file = new File("C:/1.JPG");
 	    	String output=i.getStringFromImage(new File("C:/Users/Public/Videos/Dell/Wildlife.jpg"));
 	    	System.out.println(output);
+<<<<<<< HEAD:src/moduleImageToJson/ImageToJson.java
 	    	
+=======
+>>>>>>> 923f5e74b95ec2366bdb78cd60173a4a7e240cb0:src/navcammodule/ImageToJson.java
 	    }
 	 public static String encodeImage(byte[] imageByteArray) {
 	       return Base64.encodeBase64URLSafeString(imageByteArray);
@@ -78,6 +85,12 @@ public class ImageToJson {
 	    JsonReader jsonReader = Json.createReader(new StringReader(jsonObjectStr));
 	    JsonObject object = jsonReader.readObject();
 	    jsonReader.close();
+<<<<<<< HEAD:src/moduleImageToJson/ImageToJson.java
+=======
+
+	    return object;
+	}*/
+>>>>>>> 923f5e74b95ec2366bdb78cd60173a4a7e240cb0:src/navcammodule/ImageToJson.java
 
 	    return object;
 	}*/

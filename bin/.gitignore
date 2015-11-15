@@ -1,5 +1,12 @@
-<<<<<<< HEAD
+/NavCam/
+/generic/
+/json/
+/jsontoimage/
+/main/
+/moduleCombineImage/
+/moduleConvertTogray/
 /moduleImageToJson/
-=======
+/moduleJsonToImage/
+/moduleNavCamCapture/
 /navcammodule/
->>>>>>> 923f5e74b95ec2366bdb78cd60173a4a7e240cb0
+/webcamcapture/

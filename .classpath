@@ -1,42 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-<<<<<<< HEAD
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="C:/Users/Manan/workspace/NavCam/lib/commons-codec-1.10.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Manan/workspace/NavCam/lib/commons-codec-1.10-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Manan/workspace/NavCam/lib/commons-codec-1.10-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Manan/workspace/NavCam/lib/commons-codec-1.10-tests.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Manan/workspace/NavCam/lib/commons-codec-1.10-test-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Manan/workspace/NavCam/lib/gson-2.3.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Manan/workspace/NavCam/lib/javacpp-0.5.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Manan/workspace/NavCam/lib/javacpp-0.5.jar.zip"/>
-	<classpathentry kind="lib" path="C:/Users/Manan/workspace/NavCam/lib/javacpp-0.5-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Manan/workspace/NavCam/lib/javacv.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Manan/workspace/NavCam/lib/javax.json-1.0-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Manan/workspace/NavCam/lib/javax.json-api-1.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Manan/workspace/NavCam/lib/jmf.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Manan/workspace/NavCam/lib/jmf.jar.zip"/>
-	<classpathentry kind="lib" path="C:/Users/Manan/workspace/NavCam/lib/json-simple-1.1.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Manan/workspace/NavCam/lib/opencv-300.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Manan/workspace/NavCam/lib/opencv-2410.jar"/>
-=======
-	<classpathentry kind="lib" path="lib/commons-codec-1.10-javadoc.jar"/>
-	<classpathentry kind="lib" path="lib/commons-codec-1.10-test-sources.jar"/>
-	<classpathentry kind="lib" path="lib/commons-codec-1.10.jar"/>
-	<classpathentry kind="lib" path="lib/commons-codec-1.10-sources.jar"/>
-	<classpathentry kind="lib" path="lib/commons-codec-1.10-tests.jar"/>
-	<classpathentry kind="lib" path="lib/gson-2.3.1.jar"/>
-	<classpathentry kind="lib" path="lib/javacpp-0.5-sources.jar"/>
-	<classpathentry kind="lib" path="lib/javacpp-0.5.jar"/>
-	<classpathentry kind="lib" path="lib/javacpp-0.5.jar.zip"/>
-	<classpathentry kind="lib" path="lib/javacv.jar"/>
-	<classpathentry kind="lib" path="lib/jmf.jar"/>
-	<classpathentry kind="lib" path="lib/jmf.jar.zip"/>
-	<classpathentry kind="lib" path="lib/jmf.properties"/>
-	<classpathentry kind="lib" path="lib/json-simple-1.1.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/lib/opencv-2410.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
->>>>>>> 0e38b387f4c3c534c646579876371077bc18eca5
+	<classpathentry kind="lib" path="C:/Users/ray/Documents/GitHub/NavCam/lib/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ray/Documents/GitHub/NavCam/lib/commons-codec-1.10-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ray/Documents/GitHub/NavCam/lib/commons-codec-1.10-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ray/Documents/GitHub/NavCam/lib/commons-codec-1.10-tests.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ray/Documents/GitHub/NavCam/lib/commons-codec-1.10-test-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ray/Documents/GitHub/NavCam/lib/gson-2.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ray/Documents/GitHub/NavCam/lib/javacpp-0.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ray/Documents/GitHub/NavCam/lib/javacpp-0.5.jar.zip"/>
+	<classpathentry kind="lib" path="C:/Users/ray/Documents/GitHub/NavCam/lib/javacpp-0.5-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ray/Documents/GitHub/NavCam/lib/javacv.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ray/Documents/GitHub/NavCam/lib/javax.json-1.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ray/Documents/GitHub/NavCam/lib/javax.json-api-1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ray/Documents/GitHub/NavCam/lib/jmf.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ray/Documents/GitHub/NavCam/lib/jmf.jar.zip"/>
+	<classpathentry kind="lib" path="C:/Users/ray/Documents/GitHub/NavCam/lib/json-simple-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ray/Documents/GitHub/NavCam/lib/opencv-300.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ray/Documents/GitHub/NavCam/lib/opencv-2410.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

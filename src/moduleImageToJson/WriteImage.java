@@ -19,7 +19,7 @@ public class WriteImage {
 		FileOutputStream fileOuputStream = null;
 		try {
 			BufferedImage originalImage = ImageIO.read(new File(
-					"src/moduleImageToJson/resources/Images/marssurface.jpg"));
+					"src/moduleImageToJson/resources/Images/graymixed1.jpg"));
 			baos = new ByteArrayOutputStream();
 			ImageIO.write(originalImage, "jpg", baos);
 			baos.flush();
@@ -29,7 +29,7 @@ public class WriteImage {
 			String base64Encoded = DatatypeConverter.printBase64Binary(imageInByte);
 			FileWriter writer = null;
 			try {
-				writer = new FileWriter("src/moduleImageToJson/resources/JsonFiles/marssurface.json");
+				writer = new FileWriter("src/moduleImageToJson/resources/JsonFiles/graymixed1.json");
 			System.out.println("Json Generated...");
 			} catch (IOException e) {
 				e.printStackTrace();

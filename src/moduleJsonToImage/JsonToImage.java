@@ -26,7 +26,7 @@ public class JsonToImage
 		// This is where the file will be written to
 		// In this example it is written to my desktop
 		// If Example.json doesn't exist it will be created
-		String myFilePath = "src/modulejsontoimage/resources/jsonfiles/marssurface.json";
+		String myFilePath = "src/modulejsontoimage/resources/jsonfiles/graymixed1.json";
 		
 		// JSONParser is used to parse the data
 		JSONParser parser = new JSONParser();

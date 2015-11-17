@@ -1,4 +1,4 @@
-package moduleclientserver;
+package moduleClientServer;
 
 import java.awt.Color;
 import java.awt.image.BufferedImage;
@@ -22,7 +22,7 @@ import com.google.gson.GsonBuilder;
 import moduleCombineImage.combine;
 
 
-public class server {
+public class Server {
 
  
     public static void main(String[] args) throws Exception {

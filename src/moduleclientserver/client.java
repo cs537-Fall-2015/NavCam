@@ -1,4 +1,4 @@
-package moduleclientserver;
+package moduleClientServer;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -25,7 +25,7 @@ import org.json.simple.parser.ParseException;
 import moduleCombineImage.combine;
 
 
-public class client {
+public class Client {
 
     private BufferedReader in;
     private PrintWriter out;
@@ -34,7 +34,7 @@ public class client {
     private JTextArea messageArea = new JTextArea(30, 100);
 
     
-    public client() {
+    public Client() {
 
         // Layout GUI
         messageArea.setEditable(false);
@@ -100,7 +100,7 @@ public class client {
     	String mychoice = scanner.nextLine();
     	if (mychoice.equalsIgnoreCase("1"))
     	{
-    		client client = new client();
+    		Client client = new Client();
             client.frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             client.frame.pack();
             client.frame.setVisible(true);

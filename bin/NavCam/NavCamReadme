@@ -1,0 +1,13 @@
+Procedures How The Project Run:
+
+First we have to run  the server
+
+And we will run  the client too
+
+After successfull connection , client will allow server to capture images 
+
+After capturing images , it will combine to the grayscale 
+
+After converting to grayscale images  ,it will convert to json images
+
+Json images will convert images to jpg and will display images

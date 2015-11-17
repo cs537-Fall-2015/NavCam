@@ -1,6 +1,16 @@
-/moduleJsonToImage/
+/NavCam/
+/generic/
+/json/
+/main/
+/moduleCombineImage/
+/moduleConvertTogray/
 /moduleImageToJson/
+<<<<<<< HEAD
 /NavCam/
 /moduleclientserver/
 /moduleCombineImage/
 /moduleConvertTogray/
+=======
+/moduleJsonToImage/
+/moduleNavCamCapture/
+>>>>>>> dc1e6cbd04f66947763bbaf1c4b61b052f1460bd

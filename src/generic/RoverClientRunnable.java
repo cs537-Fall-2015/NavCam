@@ -6,7 +6,7 @@ import java.net.UnknownHostException;
 
 public abstract class RoverClientRunnable implements Runnable{
 	
-	private RoverSocket roverSocket;
+	private static RoverSocket roverSocket;
 	
 	public RoverClientRunnable(int port, InetAddress host) throws UnknownHostException{
 		setRoverSocket(port, host);
@@ -16,7 +16,7 @@ public abstract class RoverClientRunnable implements Runnable{
 		this.roverSocket = new RoverSocket(port, host);		
 	}
 	
-	public RoverSocket getRoverSocket(){		
+	public static RoverSocket getRoverSocket(){		
 		return roverSocket;		
 	}
 	public void closeAll() throws IOException{

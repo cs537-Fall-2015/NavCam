@@ -1,1 +1,10 @@
-/moduleClientServer/
+/NavCam/
+/generic/
+/json/
+/main/
+/moduleCombineImage/
+/moduleConvertTogray/
+/moduleImageToJson/
+/moduleJsonToImage/
+/moduleNavCamCapture/
+/moduleclientserver/

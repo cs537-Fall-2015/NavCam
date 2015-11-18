@@ -19,7 +19,7 @@ public abstract class RoverClientRunnable implements Runnable{
 	public static RoverSocket getRoverSocket(){		
 		return roverSocket;		
 	}
-	public void closeAll() throws IOException{
+	public static void closeAll() throws IOException{
 		if(roverSocket != null)
 			roverSocket.closeAll();
 	}

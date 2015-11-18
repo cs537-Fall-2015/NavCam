@@ -64,6 +64,16 @@ public class NavCamServer extends RoverServerRunnable {
 				else{
 					System.out.println("Invalid Command");
 				}
+				
+				outputToAnotherObject.writeObject("NavCam Server response - "
+						+ message);
+
+				// close resources
+				inputFromAnotherObject.close();
+				outputToAnotherObject.close();
+				
+				/*if (message.equalsIgnoreCase("exit"))
+					break;*/
 			}
 			closeAll();
 		} catch (IOException ie) {

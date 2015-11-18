@@ -69,18 +69,15 @@ public class NavCamClient extends  RoverClientRunnable  {
             ObjectInputStream inputFromAnotherObject = null;
             Thread.sleep(500);
             
-            // Send 5 messages to the Server
-            
-            // write to socket using ObjectOutputStream
             outputToAnotherObject = new ObjectOutputStream(getRoverSocket()
                                                            .getNewSocket().getOutputStream());
             
             System.out
-            .println("=================================================");
+            .println("------------");
             System.out
             .println("NavCam Client: Sending request to Socket Server");
             System.out
-            .println("=================================================");
+            .println("------------");
             
             outputToAnotherObject.writeObject(message);
             
@@ -95,54 +92,19 @@ public class NavCamClient extends  RoverClientRunnable  {
             inputFromAnotherObject.close();
             outputToAnotherObject.close();
             Thread.sleep(100);
-            
+            closeAll();
+
             
         } catch (UnknownHostException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         } catch (Exception error) {
-          //  System.out.println("Client: Error:" + error.getMessage());
+         
         }
 	}
 	
 	
 
-	/*public NavCamClient(String host, int port) {
-
-
-
-		try {
-			socket = new Socket(host, port);
-			System.out.println("connected to " + socket.getInetAddress().getHostAddress()+"/"+socket.getPort());
-			din = new DataInputStream(socket.getInputStream());
-			dout = new DataOutputStream(socket.getOutputStream());
-			
-			new Thread(this).start();
-
-			
-		} catch (IOException ie) {
-			System.out.println(ie);
-		}
-	}
-	*/
-/*	public void processMessage(String message) {
-		try {
-			dout.writeUTF(message);
-		} catch (IOException ie) {
-			System.out.println(ie);
-		}
-	}
-	
-	@Override
-	public void run() {
-		try {
-			while (true) {
-				String message = din.readUTF();
-			}
-		} catch (IOException ie) {
-			System.out.println(ie);
-		}
-	}*/
-	
+		
 
 }

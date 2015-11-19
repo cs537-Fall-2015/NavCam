@@ -70,5 +70,66 @@ public class ImageToJSON {
 
 
 	}
+	
+	//for moduleNavCamCapture
+	
+	public ImageToJSON(String image)
+	{
+		ByteArrayOutputStream baos = null;
+		FileOutputStream fileOuputStream = null;
+		try {
+			BufferedImage originalImage = ImageIO.read(new File(
+					"src/moduleNavCamCapture/resources/capturedImages/"+image+".jpg"));
+			baos = new ByteArrayOutputStream();
+			ImageIO.write(originalImage, "jpg", baos);
+			baos.flush();
+			byte[] imageInByte = baos.toByteArray();
+			Gson gson = new GsonBuilder().setPrettyPrinting().create();
+
+			String base64Encoded = DatatypeConverter.printBase64Binary(imageInByte);
+			FileWriter writer = null;
+			try {
+				writer = new FileWriter("src/moduleNavCamCapture/resources/JsonFiles/"+image+".json");
+			System.out.println("Json Generated...");
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			
+			// Object is converted to a JSON String
+			// Object is converted to a JSON String
+			String jsonString = gson.toJson(base64Encoded);
+			
+			
+			// Write the file
+			try {
+				writer.write(jsonString);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			
+			// Close the Writer
+			try {
+				writer.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			
+			
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}finally{
+			try {
+				baos.close();
+				//fileOuputStream.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			} 
+
+		}
+
+
+	}
+
 
 }

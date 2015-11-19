@@ -25,6 +25,7 @@ import generic.RoverServerRunnable;
 import moduleCombineImage.combine;
 import moduleConvertTogray.grayscale;
 import moduleImageToJson.ImageToJSON;
+import moduleNavCamCapture.NavCamCapture;
 
 
 
@@ -76,7 +77,7 @@ public class NavCamServer extends RoverServerRunnable {
 					Thread.sleep(1000);
 
 					System.out.println("NavCam Click");
-					
+					frame= new JFrame();
 					JPanel panel = new JPanel();
 					panel.setLayout(new GridLayout(2,2));
 					
@@ -155,6 +156,26 @@ public class NavCamServer extends RoverServerRunnable {
 			}
 				else if(message.equals("NCAM_CAPTURE")){
 					Thread.sleep(1000);
+					NavCamCapture nav = new NavCamCapture();
+					
+					frame= new JFrame();
+					JPanel panel = new JPanel();
+					
+					JLabel image = new JLabel();
+					image.setIcon(new ImageIcon(new ImageIcon("src/moduleNavCamCapture/resources/capturedImages/"+nav.getSelectedImage()+".jpg").getImage().getScaledInstance(600, 400, Image.SCALE_DEFAULT)));
+
+					panel.add(image);
+					
+					frame.add(panel);
+					frame.setSize(680, 600);
+				    frame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+					frame.setVisible(true);
+
+					waitForFrameToBeClosed();
+					    				    
+					Thread.sleep(1000);
+
+
 
 					System.out.println("NavCam Capture");
 			}

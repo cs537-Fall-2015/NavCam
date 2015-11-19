@@ -10,6 +10,8 @@ public class NavCamCapture {
 	
 	ArrayList<String> filesNames = new ArrayList<String>();
 	
+	String selectedImage = "";
+	
 	public NavCamCapture() throws InterruptedException
 	{
 		File folder = new File("src/moduleNavCamCapture/resources/capturedImages");
@@ -30,6 +32,7 @@ public class NavCamCapture {
 		
 		
 		System.out.println("Random Image has been selected >>> "+filesNames.get(Result));
+		 setSelectedImage(filesNames.get(Result));
 		Thread.sleep(1000);
 		
 		System.out.println("Generateing the JsonFile for >>>"+ filesNames.get(Result)+" ...");
@@ -42,6 +45,16 @@ public class NavCamCapture {
 
 
 	}
+
+	public String getSelectedImage() {
+		return selectedImage;
+	}
+
+	public void setSelectedImage(String selectedImage) {
+		this.selectedImage = selectedImage;
+	}
+	
+	
 	
 
 }

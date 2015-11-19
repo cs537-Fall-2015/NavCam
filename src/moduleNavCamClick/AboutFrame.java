@@ -1,4 +1,4 @@
-package moduleNavCamCapture;
+package moduleNavCamClick;
 
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;

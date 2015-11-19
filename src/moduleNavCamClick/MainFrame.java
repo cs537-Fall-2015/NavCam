@@ -1,4 +1,4 @@
-package moduleNavCamCapture;
+package moduleNavCamClick;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -33,7 +33,7 @@ public class MainFrame extends JFrame implements ActionListener {
 		buttonPane = new JPanel();
 		buttonPane.setLayout(new GridLayout(3,2));
 		
-		 JButton captureButton = new JButton("Capture"); 
+		 JButton captureButton = new JButton("Click"); 
 		 captureButton.addActionListener(this);
 		 
 		 JButton TURN_OFF_Button = new JButton("TURN OFF"); 
@@ -108,7 +108,7 @@ public class MainFrame extends JFrame implements ActionListener {
 		
 		System.loadLibrary(Core.NATIVE_LIBRARY_NAME);	// Load OpenCV stuff
 		
-		if(e.getActionCommand().equals("Capture"))
+		if(e.getActionCommand().equals("Click"))
 		{
 			openLeftTop();
 			
@@ -121,11 +121,11 @@ public class MainFrame extends JFrame implements ActionListener {
 			}
 			
 			
-			boolean gotNewImage = myFrame.capture("src/moduleNavCamCapture/resources/capturedImages/LeftTop.jpg");
+			boolean gotNewImage = myFrame.capture("src/moduleNavCamClick/resources/ClickedImages/LeftTop.jpg");
 			
 			if (gotNewImage) {
-				File tmpFile = new File("src/moduleNavCamCapture/resources/capturedImages/LeftTop.jpg");	
-				System.out.println("The system captured an photo with the name LeftTop.jpg" );
+				File tmpFile = new File("src/moduleNavCamClick/resources/ClickedImages/LeftTop.jpg");	
+				System.out.println("The system Clicked an photo with the name LeftTop.jpg" );
 			} 
 			
 			
@@ -138,11 +138,11 @@ public class MainFrame extends JFrame implements ActionListener {
 				e1.printStackTrace();
 			}
 			
-	        boolean gotNewImage2 = myFrame.capture("src/moduleNavCamCapture/resources/capturedImages/RightTop.jpg");
+	        boolean gotNewImage2 = myFrame.capture("src/moduleNavCamClick/resources/ClickedImages/RightTop.jpg");
 			
 			if (gotNewImage2) {
-				File tmpFile = new File("src/moduleNavCamCapture/resources/capturedImages/LeftTop.jpg");	
-				System.out.println("The system captured an photo with the name RightTop.jpg" );
+				File tmpFile = new File("src/moduleNavCamClick/resources/ClickedImages/LeftTop.jpg");	
+				System.out.println("The system Clicked an photo with the name RightTop.jpg" );
 			} 
 			
 			
@@ -154,11 +154,11 @@ public class MainFrame extends JFrame implements ActionListener {
 				e1.printStackTrace();
 			}
 			
-			  boolean gotNewImage3 = myFrame.capture("src/moduleNavCamCapture/resources/capturedImages/LeftDown.jpg");
+			  boolean gotNewImage3 = myFrame.capture("src/moduleNavCamClick/resources/ClickedImages/LeftDown.jpg");
 				
 				if (gotNewImage3) {
-					File tmpFile = new File("src/moduleNavCamCapture/resources/capturedImages/LeftDown.jpg");	
-					System.out.println("The system captured an photo with the name LeftDown.jpg" );
+					File tmpFile = new File("src/moduleNavCamClick/resources/ClickedImages/LeftDown.jpg");	
+					System.out.println("The system Clicked an photo with the name LeftDown.jpg" );
 				} 
 				
 				
@@ -171,11 +171,11 @@ public class MainFrame extends JFrame implements ActionListener {
 				e1.printStackTrace();
 			}	
 			
-			 boolean gotNewImage4 = myFrame.capture("src/moduleNavCamCapture/resources/capturedImages/RightDown.jpg");
+			 boolean gotNewImage4 = myFrame.capture("src/moduleNavCamClick/resources/ClickedImages/RightDown.jpg");
 				
 				if (gotNewImage4) {
-					File tmpFile = new File("src/moduleNavCamCapture/resources/capturedImages/RightDown.jpg");	
-					System.out.println("The system captured an photo with the name RightDown.jpg" );
+					File tmpFile = new File("src/moduleNavCamClick/resources/ClickedImages/RightDown.jpg");	
+					System.out.println("The system Clicked an photo with the name RightDown.jpg" );
 				} 
 				
 			

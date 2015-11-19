@@ -1,4 +1,4 @@
-package moduleNavCamCapture;
+package moduleNavCamClick;
 
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
@@ -37,7 +37,7 @@ public class MainView  extends JFrame implements ActionListener {
 		 buttonPane.add(exitButton);
 		 
 		 
-		 ImageIcon imageIcon = new ImageIcon("src/moduleNavCamCapture/resources/NavCam.png");
+		 ImageIcon imageIcon = new ImageIcon("src/moduleNavCamClick/resources/NavCam.png");
 		 JLabel label = new JLabel(imageIcon);
 		 
 		add(buttonPane, BorderLayout.SOUTH);

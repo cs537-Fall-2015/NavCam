@@ -71,23 +71,28 @@ public class NavCamClient extends  RoverClientRunnable  {
             
             outputToAnotherObject = new ObjectOutputStream(getRoverSocket()
                                                            .getNewSocket().getOutputStream());
-            
+			Thread.sleep(1000);
+
             System.out
             .println("------------");
             System.out
             .println("NavCam Client: Sending request to Socket Server");
             System.out
             .println("------------");
-            
+			Thread.sleep(1000);
+
             outputToAnotherObject.writeObject(message);
             
             // read the server response message
             inputFromAnotherObject = new ObjectInputStream(getRoverSocket()
                                                            .getSocket().getInputStream());
             String message1 = (String) inputFromAnotherObject.readObject();
+			Thread.sleep(1000);
+
             System.out.println("NavCam Client received: "
                                + message1.toUpperCase());
-            
+			Thread.sleep(1000);
+
             // close resources
             inputFromAnotherObject.close();
             outputToAnotherObject.close();

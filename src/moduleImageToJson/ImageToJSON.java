@@ -10,10 +10,10 @@ import javax.xml.bind.DatatypeConverter;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-public class WriteImage {
+public class ImageToJSON {
 	
 	
-	public WriteImage()
+	public ImageToJSON()
 	{
 		ByteArrayOutputStream baos = null;
 		FileOutputStream fileOuputStream = null;

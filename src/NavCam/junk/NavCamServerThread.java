@@ -1,4 +1,4 @@
-package NavCam;
+package NavCam.junk;
 
 import java.io.DataInputStream;
 import java.io.EOFException;

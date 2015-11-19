@@ -1,9 +1,6 @@
-<<<<<<< HEAD
+
 # moduleNavCamCapture
 
-=======
-#moduleNavCamCapture
->>>>>>> d16f25f5d86e89f2b3cf1b2b3eed5adee4219b5c
 
 1- Download OpenCV 2.4.10
 

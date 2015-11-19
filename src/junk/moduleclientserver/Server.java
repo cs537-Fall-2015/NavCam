@@ -1,4 +1,4 @@
-package moduleclientserver;
+package junk.moduleclientserver;
 
 import java.awt.Color;
 import java.awt.image.BufferedImage;

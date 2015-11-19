@@ -1,5 +1,5 @@
 
-# moduleNavCamCapture
+# moduleNavCamClick
 
 
 1- Download OpenCV 2.4.10

@@ -5,7 +5,8 @@ import java.io.EOFException;
 import java.io.IOException;
 import java.net.Socket;
 
-import NavCam.NavCamServer;
+import NavCam.testmainNavCam.NavCamServer;
+
 public class NavCamServerThread extends Thread {
 
 	private NavCamServer server;

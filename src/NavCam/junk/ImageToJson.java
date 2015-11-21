@@ -1,4 +1,4 @@
-package NavCam.moduleImageToJson.junk;
+package NavCam.junk;
 
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;
